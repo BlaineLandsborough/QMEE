@@ -1,2 +1,4 @@
 # QMEE
-Test repository.
+I couldn't access my intended data set in time and used an older data set instead. For the time being, at least.
+Zeep.csv is a bioacoustic data set with measurements of night flight calls recorded from birds of nine Warbler species (Parulidae spp.). Nocturnal flight calls are short, species-specific vocalizations that many migratory birds will produce during their nocturnal migration. These calls can be used to monitor bird populations by recording and detecting the birds flying over an area and identifying their calls to the species-level. The nine recorded species all produce nocturnal flight calls that are superficially similar in acoustic properties (ie. the "zeep" species-group). The primary question for this data set is: Have the nocturnal flight calls of these nine warbler species diverged enough to allow identification of a bird to the species on the basis of vocalization alone? Additionally, it is important to know which measurement variables are the most useful for discerning the species-identity of nocturnally-migrating birds.  
+
