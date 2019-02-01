@@ -1,25 +1,21 @@
 Week 4:
+ 1) What is the probability that a randomly-selected person, who tested positive for the disease, actually has the disease?
 
-1)	What is the probability that a randomly-selected person, who tested positive for the disease, actually has the disease?
-
-The probability that this person has MMV is 0.669.
+The probability that this person has MMV is 0.17.
 
 Work shown:
 Pre-test probability: 0.01
 Sensitivity: 1
 Specificity: 0.95
 LR+ = 1/(1-0.95) = 20
-Pre-test odds: 0.01 / (1-0.01) = 0.101
-Post-test odds: 0.101 x 20 = 2.02
-Post-test probability: 2.02/(1 + 2.02) = 0.66889 
+Pre-test odds: 0.01 / (1-0.01) = 0.0101
+Post-test odds: 0.0101 x 20 = 0.202
+Post-test probability: 0.202/(1 + 0.202) = 0.16806 
 
-2)	You learn that your friend has a positive rapid test for MMV. What do you tell them?
+2) You learn that your friend has a positive rapid test for MMV. What do you tell them?
 
-First, I need additional information before I can tell them anything informative. Specifically, I need to know whether my friend tested randomly or selected for a certain reason (e.g. symptoms or exposure). Further, how prevalent is the disease in our population. 
-
-Assuming that my friend was both tested randomly and belongs to a population with a similarly low prevalence of the disease (1%), I would explain to him that, when likelihood ratios are used to consider all of the available evidence (e.g. prevalence, specificity, and sensitivity), there is a considerable probability (33%) that he does not actually have the disease. Even though the test results were positive, the extremely low prevalence of the disease in the population along with the known probability of false-positive results will lower the post-test probability of having the disease quite substantially.
-
-
+First, I need additional information before I can tell them anything informative. Specifically, I need to know whether my friend was tested randomly or selected for a certain reason (e.g. symptoms or exposure). Further, how prevalent is the disease in our population.
+Assuming that my friend was both tested randomly and belongs to a population with a similarly low prevalence of the disease (1%), I would explain to him that, when a likelihood ratio is used to consider all of the available evidence (e.g. prevalence, specificity, and sensitivity), there is a substantial probability that he does not actually have the disease. Even though the test results were positive, the extremely low prevalence of the disease in the population along with the known probability of false-positive results will drastically lower the post-test probability of having the disease.
 
 
 Week 3:
