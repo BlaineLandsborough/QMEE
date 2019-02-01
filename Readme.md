@@ -1,3 +1,27 @@
+Week 4:
+
+1)	What is the probability that a randomly-selected person, who tested positive for the disease, actually has the disease?
+
+The probability that this person has MMV is 0.669.
+
+Work shown:
+Pre-test probability: 0.01
+Sensitivity: 1
+Specificity: 0.95
+LR+ = 1/(1-0.95) = 20
+Pre-test odds: 0.01 / (1-0.01) = 0.101
+Post-test odds: 0.101 x 20 = 2.02
+Post-test probability: 2.02/(1 + 2.02) = 0.66889 
+
+2)	You learn that your friend has a positive rapid test for MMV. What do you tell them?
+
+First, I need additional information before I can tell them anything informative. Specifically, I need to know whether my friend tested randomly or selected for a certain reason (e.g. symptoms or exposure). Further, how prevalent is the disease in our population. 
+
+Assuming that my friend was both tested randomly and belongs to a population with a similarly low prevalence of the disease (1%), I would explain to him that, when likelihood ratios are used to consider all of the available evidence (e.g. prevalence, specificity, and sensitivity), there is a considerable probability (33%) that he does not actually have the disease. Even though the test results were positive, the extremely low prevalence of the disease in the population along with the known probability of false-positive results will lower the post-test probability of having the disease quite substantially.
+
+
+
+
 Week 3:
 
 The first is a scatterplot of the mass of Pukeko nestlings that were caught both at 0-1 days and >=10 days of age. The plot shows the mass (grams) of nestlings on the y-axis and ages (days) on the x-axis. The plot is meant to give a simple visualization of the size of nestlings (using only mass) by age with the colour representing treatment type. However, this first plot has clusters of data points that make it difficult to interpret. The second plot is a series line graph of the same to visualize the mass of nestlings by age but separated by nest for easier comparison of change in mass between treatment types. This provides some insight into the difference in mass by age allowing to infer differences in growth rate between nests and treatment types. It also makes it easier to digest and interpret the data points while looking for outliers or abnormalities. Obviously, all these plots ignore a number of random and non-random effects (e.g. clutch size, hatch order, calendar date, etc.). I also plotted the change in mass over time for two chicks, one per treatment type. Both chicks selected were the most frequently captured for each treatment type. These plots should be the easiest method to interpret these data as it is comparing position along common scales. Scatterplots are one of the simplest plot methods and may be helpful in identifying clusters of data points and potential outliers.
