@@ -1,0 +1,12 @@
+##Question One: Does treatment type affect offspring growth (Tarus length) with age (in days) as a fixed factor? 
+
+##How to test: My first intended method of testing was to shuffle (sample) my response variable while ensuring the repeated measures for each individual would receive the same treatment type. (E.g. all chickA measurements would be randomly assigned the same treatment type). Since if I permuted the individual values, this would be testing that this is no structure within the observations from the same bird. However, I was unable to figure out how to do this - I could sample within a designated strata but not among. 
+
+Instead, I tested this using the lmPerm package, which allowed me to include age and nest as fixed factors. ##Note: I'm not at all certain this is the correct equation (i.e. not certain yet how to account for repeated measures of chicks along with age and nest). 
+
+##Question Two: Does treatment type affect initial size (i.e. Tarsus length) of nestlings after hatching? 
+
+##How to test: Use a simple permutation test to compare the means between treatment types after sampling/permuting the values for my response variable (tarsus length). Since this is only looking at the initial measurement for each individual, a restricted permutation design is not required. 
+
+I attempted to perform a "brute force" permutation test to compare the means between treatments after sampling, but I encountered several errors in my code and was unable to work them out. I've included the code but commented out. I'm likely missing something fairly obvious. 
+
