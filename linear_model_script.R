@@ -1,0 +1,16 @@
+library(tidyverse)
+library(lme4)
+library(jtools)
+library(ggstance)
+puk <- read_csv("Chick_measurements_2018.csv")
+puk2 <- na.omit(puk)
+puk.var <- puk2[c("ChickID", "Hatch_spread", "Nest", "Date", "age_day", "Final_age_seen", "Tar", "Treatment_Type")]
+puk.subset <- puk.var %>% filter(puk.var$Final_age_seen >= 10 & puk.var$age_day <= 60)
+puk.subset1 <- puk.subset
+puk.subset1$ttar <- log10(puk.subset1$Tar)
+puk_gro <- lm(ttar ~ Hatch_spread, data = puk.subset1)
+puk_gro1 <- lm(ttar ~ age_day + Hatch_spread, data = puk.subset1)
+par(mfrow=c(2,2),mar=c(2,3,1.5,1),mgp=c(2,1,0))
+plot(puk_gro1,id.n = 4)
+puk_gro2 <- lmer(ttar ~ Hatch_spread + age_day + (1|Nest), data = puk.subset1)
+plot_summs(puk_gro1, scale = TRUE, plot.distributions = TRUE, inner_ci_level = .95)
