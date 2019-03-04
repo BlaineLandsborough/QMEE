@@ -37,10 +37,17 @@ pukmcmc <- as.mcmc.bugs(bayoutput)
 print(bmod)
 traceplot(bayoutput)
 
+
+
+
+
 library("emdbook")
+library("lattice")
 bayoutput <- bmod$BUGSoutput  
 pukmcmc <- as.mcmc.bugs(bayoutput) 
 xyplot(pukmcmc,layout=c(2,3))
+
+
 
 densityplot(pukmcmc,layout=c(2,2))
 #second chain
