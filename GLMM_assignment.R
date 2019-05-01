@@ -13,3 +13,7 @@ summary(puksur)
 ##It is a GLMM with first_sur representing whether the bird was alive at the first survey
 ##this is coded as 0 and 1. The model revealed hatch_spread to have a (significant)
 ##negative effect on survival. 
+
+## JD: This all seems fine to me. Given that you account for random effect of nest, goodness of fit should not be an issue (it's an issue when you have different observations that you assume have the same binomial probability)
+
+## Grade 2/3
